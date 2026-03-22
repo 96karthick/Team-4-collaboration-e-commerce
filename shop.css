@@ -3,7 +3,11 @@ body {
     margin: 0;
     background: #f5f5f5;
 }
-
+.header__right-one-mobile{
+        color: #fff !important;
+    display: flex;
+    background: #7a6e6e !important;
+}
 /* 🔵 NAVBAR */
 .navbar {
     background: #1e3a8a;
