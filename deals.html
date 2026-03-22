@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Deals</title>
+</head>
+<body>
+    <!---Navbar-->
+    <header class="navbar">
+        <h2>TechZone</h2>
+        <!---Menu icon-->
+        <div class="menu-toggle" onclick="togglemenu()"><i class="fa-solid fa-bars" style="color: rgb(255, 212, 59);"></i></div>
+        <nav id="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Deals</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <!---Hero Section---->
+    <section class="hero">
+        <div class="hero-content">
+        <div class="hero-text">
+            <h1>Hot Deals <br> TODAY ONLY!</h1>
+            <P>up to <span>50% OFF</span></P>
+            <button>Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="./images/rishabh-malhotra-83ypHTv6J2M-unsplash.jpg" alt="phone">
+        </div>
+        </div>
+    </section>
+    <!---Deal area---->
+    <section class="deal">
+        <h2>Deal of the day</h2>
+        <div class="deal-card">
+            <img src="./images/samuel-regan-asante-2RgULEM_vAU-unsplash.jpg" alt="tv">
+            <div class="deal-info">
+                <h3>4k Smart TV</h3>
+                <p class="price">$799 <span>$999</span></p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <!---Top Deals-->
+     <section class="p-4 text-center">
+        <h1 class="font-bold mt-5 text-3xl">Top Deals </h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./images/cell_5.jpg" class="inline hover:shadow-xl transform  hover:translate-y-2" alt="">
+                <h1>Ear buds</h1>
+                <p>$15000</p>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Shop now</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Add to cart</button>
+            </div>
+
+            <div>
+                <img src="./images/cell_6.jpg" class="inline hover:shadow-xl transform  hover:translate-y-2" alt="">
+                <h1>bluetooth wings</h1>
+                <p>$2000</p>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Shop now</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Add to cart</button>
+            </div>
+
+            <div>
+                <img src="./images/cell_7.jpg" class="inline hover:shadow-xl transform  hover:translate-y-2" alt="">
+                <h1>nikon 360 cam </h1>
+                <p>$75000</p>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Shop now</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Add to cart</button>
+            </div>
+
+            <div>
+                <img src="./images/cell_8.jpg" class="inline hover:shadow-xl transform  hover:translate-y-2" alt="">
+                <h1>Sony wide Lens</h1>
+                <p>$80,000</p>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Shop now</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Add to cart</button>
+            </div>
+            <div>
+                <img src="./images/cell_1.png" class="inline hover:shadow-xl transform  hover:translate-y-2" alt="">
+                <h1>Samsug ultra</h1>
+                <p>$25,000</p>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Shop now</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Add to cart</button>
+            </div>
+            <div>
+                <img src="./images/cell_2.png" class="inline hover:shadow-xl transform  hover:translate-y-2" alt="">
+                <h1>Samsug Champ</h1>
+                <p>$40,000</p>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Shop now</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Add to cart</button>
+            </div>
+            <div>
+                <img src="./images/cell_3.png" class="inline hover:shadow-xl transform  hover:translate-y-2" alt="">
+                <h1>samsug A24</h1>
+                <p>$19,999</p>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Shop now</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Add to cart</button>
+            </div>
+            <div>
+                <img src="./images/cell_4.png" class="inline hover:shadow-xl transform  hover:translate-y-2" alt="">
+                <h1>Samsug galagxy s23 ultra</h1>
+                <p>$20,000</p>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Shop now</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Add to cart</button>
+            </div>
+        </div>
+    </section>
+    <div class="pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+    </div>
+    <div class="footer-sec">
+        <div class="footer-sec-one">
+            <i class="fa-regular fa-truck"></i><br>
+            <h2>Free Shipping</h2><br>
+            <h4>On Orders over RS.999</h4>
+        </div>
+        <div class="footer-sec-two">
+            <i class="fa-regular fa-handshake"></i><br>
+            <h2>Hot Deals</h2><br>
+            <h4>Upto 500Rs off !!!</h4>
+        </div>
+        <div class="footer-sec-three">
+    <i class="fa-solid fa-shield-halved"></i><br>
+            <h2>Secure Payment</h2>
+            <h4>100% Safe & Secure </h4>
+        </div>
+    </div>
+</body>
+</html>
