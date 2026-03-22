@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TechZone Shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+<!-- 🔵 NAVBAR -->
+<nav class="navbar">
+    <div class="logo">TechZone</div>
+    <ul class="nav-links">
+        <li>Home</li>
+        <li class="active">Shop</li>
+        <li>Deals</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+
+<!-- 🛒 TITLE -->
+<h1 class="title">Shop Products</h1>
+
+<!-- 🔍 FILTER BUTTONS -->
+<div class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('mobile')">Mobiles</button>
+    <button onclick="filterProducts('laptop')">Laptops</button>
+    <button onclick="filterProducts('headphone')">Headphones</button>
+    <button onclick="filterProducts('tv')">TV</button>
+</div>
+
+<!-- 📦 PRODUCTS -->
+<div class="product-container">
+
+    <div class="product-card" data-category="mobile">
+        <img src="https://m.media-amazon.com/images/I/61cwywLZR-L._SX679_.jpg">
+        <h3>iPhone 14</h3>
+        <p>₹70,000</p>
+    </div>
+
+    <div class="product-card" data-category="mobile">
+        <img src="https://m.media-amazon.com/images/I/71xb2xkN5qL._SX679_.jpg">
+        <h3>Samsung Galaxy</h3>
+        <p>₹60,000</p>
+    </div>
+
+    <div class="product-card" data-category="laptop">
+        <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SX679_.jpg">
+        <h3>HP Laptop</h3>
+        <p>₹50,000</p>
+    </div>
+
+    <div class="product-card" data-category="headphone">
+        <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._SX679_.jpg">
+        <h3>Boat Headphone</h3>
+        <p>₹2,999</p>
+    </div>
+
+    <div class="product-card" data-category="tv">
+        <img src="https://m.media-amazon.com/images/I/71S8U9VzLTL._SX679_.jpg">
+        <h3>Samsung TV</h3>
+        <p>₹45,000</p>
+    </div>
+
+</div>
+
+<!-- 🔥 JS FILTER -->
+<script>
+function filterProducts(category) {
+    let products = document.querySelectorAll(".product-card");
+
+    products.forEach(product => {
+        if (category === "all") {
+            product.style.display = "block";
+        } 
+        else if (product.getAttribute("data-category") === category) {
+            product.style.display = "block";
+        } 
+        else {
+            product.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+
+<body>
+
+    <!-- your full HTML content -->
+    <!-- navbar -->
+    <!-- filters -->
+    <!-- products -->
+
+    
+    <!-- 🔥 PASTE JS HERE -->
+    <script>
+    function applyFilters() {
+
+        const selectedCategories = [];
+        const checkboxes = document.querySelectorAll(".filter-checkbox:checked");
+
+        checkboxes.forEach(cb => {
+            selectedCategories.push(cb.value);
+        });
+
+        const products = document.querySelectorAll(".product-card");
+
+        products.forEach(product => {
+            const category = product.getAttribute("data-category");
+
+            if (selectedCategories.length === 0) {
+                product.style.display = "block";
+            }
+            else if (selectedCategories.includes(category)) {
+                product.style.display = "block";
+            }
+            else {
+                product.style.display = "none";
+            }
+        });
+    }
+    </script>
+
+</body>
+</html>
