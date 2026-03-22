@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -16,15 +19,17 @@
             <div class="header__right">
                 <div class="header__right-one">
                     <p>Home</p>
-                    <p>Shop</p>
-                    <p>Deals</p>
+                    <p><a href="shop.html">Shop</a></p>
+                    <p><a href="deals.html">Deals</a></p>
                     <p>About</p>
-                    <p>Contact</p>
+                    <p><a href="contact.html">Contact</a></p>
                 </div>
                 <div class="header__right-two">
-                    <span>
+                    <span class="addCartParSpan">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <p>Cart</p>
+                        <p class="addCartPar">Cart
+                            <span class="countOfItems"><i class="count">0</i></span>
+                        </p>
                     </span>
                     <span>
 
@@ -32,6 +37,47 @@
                     </span>
                 </div>
             </div>
+            <div class="header__right-navBar">
+                <i class="fa-solid fa-bars navBar"></i>
+            </div>
+                <div class="header__right-one-mobile">
+                    <span class="icon-close">X</span>
+                    <p>Home</p>
+                    <p>Shop</p>
+                    <p>Deals</p>
+                    <p>About</p>
+                    <p>Contact</p>
+                </div>
+        </div>
+        <div class="cartItem-dom">
+            <span class="cart-close">X</span>
+            <table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- <tr>
+      <td><img src="./assets/t_image01.jpg"></td>
+      <td>1299 Rs</td>
+    </tr>
+    <tr>
+      <td>3_15247</td>
+      <td>BATES000019.eml</td>
+    </tr> -->
+  </tbody>
+</table>
+<span class="cart-borderDom"></span>
+<div class="total">
+    <span class="label">Total Amount</span>
+    <span class="amount"></span>
+</div>
+<div class="b_container">
+
+    <button>Proceed to Checkout</button>
+</div>
         </div>
         <div class="body-sec">
             <div class="body-sec-text">
@@ -63,27 +109,36 @@
     <div class="featured-products-sec-img-sec">
         <div class="featured-products-sec-img-sec-image">
             <img src="./assets/f_product01.jpg">
-            <h3>Samsung Galaxy</h3>
-            <h2>Rs.49,000</h2>
+            <h3>Samsung</h3>
+            <h2>Rs.45,499</h2>
             <button>Shop Now</button>
+                        <button class="addCart">Add to cart</button>
+                        <tags style="visibility:hidden">Mobile</tags>
+                                                <!-- <button class="removeCart">Remove from cart</button> -->
         </div>
         <div class="featured-products-sec-img-sec-image">
             <img src="./assets/f_product02.jpg">
-            <h3>Samsung Galaxy</h3>
-            <h2>Rs.49,000</h2>
+            <h3>Dell Laptop</h3>
+            <h2>Rs.65,000</h2>
             <button>Shop Now</button>
+                                    <button class="addCart">Add to cart</button>
+                                                            <tags style="visibility:hidden">Laptop</tags>
         </div>
         <div class="featured-products-sec-img-sec-image">
             <img src="./assets/f_product03.jpg">
-            <h3>Samsung Galaxy</h3>
-            <h2>Rs.49,000</h2>
+            <h3>Sony Headphone</h3>
+            <h2>Rs.64,999</h2>
             <button>Shop Now</button>
+                                    <button class="addCart">Add to cart</button>
+                                                            <tags style="visibility:hidden">Headphone</tags>
         </div>
         <div class="featured-products-sec-img-sec-image">
             <img src="./assets/f_product04.jpg">
-            <h3>Samsung Galaxy</h3>
-            <h2>Rs.49,000</h2>
+            <h3>Casino Vintage</h3>
+            <h2>Rs.2500</h2>
             <button>Shop Now</button>
+                                    <button class="addCart">Add to cart</button>
+                                                            <tags style="visibility:hidden">Watch</tags>
         </div>
     </div>
 </div>
@@ -92,7 +147,7 @@
     <div class="trending-now-sec__title-sec">
         <h1>Trending Now</h1>
         <span class="border"></span>
-        <p>View All <i class="fa-solid fa-angle-down"></i> <i class="fa-solid fa-angle-up"></i> </p>
+        <p>View All <i class="fa-solid fa-angle-down viewAll"></i></p>
     </div>
     <div class="trending-now-sec__products">
 <div class="trending-now-sec__products-product">
@@ -108,16 +163,16 @@
     <h2>Home Thetre</h2>
 </div>
 <div class="trending-now-sec__products-product">
-    <img src="./assets/t_image03.jpg">
-    <h2>Home Thetre</h2>
+    <img src="./assets/t_image_04.jpg">
+    <h2>PS5</h2>
 </div>
 <div class="trending-now-sec__products-product">
-    <img src="./assets/t_image03.jpg">
-    <h2>Home Thetre</h2>
+    <img src="./assets/t_image_05.jpg">
+    <h2>Puma Shoes</h2>
 </div>
 <div class="trending-now-sec__products-product">
-    <img src="./assets/t_image03.jpg">
-    <h2>Home Thetre</h2>
+    <img src="./assets/t_image_06.jpg">
+    <h2>Wolverine</h2>
 </div>
     </div>
 </div>

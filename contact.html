@@ -6,10 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    .container{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .header{
+width: 97%;
+    }
+    }
+</style>
 
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<body class="bg-gray-100 min-h-screen">
+    <div class="container">
+<div class="header">
+            <div class="header__title">TechZone</div>
+            <div class="header__right">
+                <div class="header__right-one">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="shop.html">Shop</a></p>
+                    <p><a href="deals.html">Deals</a></p>
+                    <p>About</p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="header__right-two">
+                    <span class="addCartParSpan">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="addCartPar">Cart</p>
+                    </span>
+                    <span>
 
+                        <p>Login</p>
+                    </span>
+                </div>
+            </div>
+            <div class="header__right-navBar">
+                <i class="fa-solid fa-bars navBar"></i>
+            </div>
+                <div class="header__right-one-mobile">
+                    <span class="icon-close">X</span>
+                    <p>Home</p>
+                    <p>Shop</p>
+                    <p>Deals</p>
+                    <p>About</p>
+                    <p>Contact</p>
+                </div>
+        </div>
     <div class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
 
         <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">
@@ -48,7 +97,7 @@
         </form>
 
     </div>
-
+</div>
 </body>
 
 </html>

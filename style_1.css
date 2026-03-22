@@ -37,6 +37,7 @@ body{
     text-decoration: none;
 }
 .hero{
+    margin: 20px;
     background: linear-gradient(to right, #0b2545,#2a5298);
     color: white;
     padding: 60px;
@@ -138,10 +139,11 @@ body{
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    color: #000 !important;
 }
 .pagination a:hover{
     background-color: #0b3d91;
-    color: white;
+    color: white !important;
 }
 .pagination a.active{
     background-color: #0b3d91;
